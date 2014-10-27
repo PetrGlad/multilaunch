@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Multilaunch
+Bundle-SymbolicName: petrglad.multilaunch;singleton:=true
+Bundle-Version: 1.0.0.snapshot
+Bundle-Activator: petrglad.multilaunch.Activator
+Bundle-Vendor: Petr Gladkikh
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.debug.core,
+ org.eclipse.debug.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8,
+ JavaSE-1.7
+Bundle-ActivationPolicy: lazy

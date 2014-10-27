@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="petrglad.multilaunch.MultilaunchConfigurationDelegate"
+            delegateDescription="Launch multiple other configurations at once."
+            id="petrglad.multilaunch.launchConfigurationType"
+            modes="debug,run"
+            name="Launch multiple configurations"
+            public="true">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="petrglad.multilaunch.LaunchConfigurationTabGroup"
+            id="petrglad.multilaunch.launchConfigurationTabGroup"
+            type="petrglad.multilaunch.launchConfigurationType">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="petrglad.multilaunch.launchConfigurationType"
+            icon="resources/multilaunch-icon.png"
+            id="multilaunch.launchConfigurationTypeImage">
+      </launchConfigurationTypeImage>
+   </extension>
+
+</plugin>
